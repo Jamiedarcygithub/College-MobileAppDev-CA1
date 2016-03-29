@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">OrderMyDrinks</string>
+
+    <!--General application strings-->
+    <string name="btn_alertOK">OK</string>
+
+    <!--Menu strings-->
+
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="exit">Exit</string>
+    <string name="refresh">Refresh</string>
+
+    <!--Select Place Strings-->
+    <string name="selected_place_title">Bar Details</string>
+    <string name="btn_makereservation">Make Reservation</string>
+    <string name="btn_callbar">Call Bar</string>
+    <string name="txtv_name">Name:</string>
+    <string name="txtv_address">Address:</string>
+    <string name="txtv_website">WebSite:</string>
+
+    <!--Activity Main  Stings-->
+    <string name="reserve_table_title">Enter Details</string>
+    <string name="user_name">Name</string>
+    <string name="user_email">Email</string>
+    <string name="number_guests">Number Of Guests</string>
+    <string name="username_validation_msg">Please add user name</string>
+    <string name="email_validation_msg">Please add email address</string>
+
+
+    <string name="btn_selectdrinks">Select Drinks</string>
+
+    <string name="transport_bus">Bus</string>
+    <string name="transport_walk">Walk</string>
+    <string name="transport_cycle">Cycle</string>
+    <string name="transport_drive">Car</string>
+    <!--
+    <string name="transport_spinner">Select your method of transport!</string>
+    <string name="guests_spinner">Select the number of Guests!</string>
+-->
+    <!--Select Drinks stings-->
+
+    <string name="btn_orderdrinks">Order Drinks</string>
+
+    <string name="drinksList_text">Item Text</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add_image">addImage</string>
+    <string name="delete_image">deleteImage</string>
+    <string name="thumbnail">thumbnail</string>
+
+    <!-- Nav drawer strings -->
+    <string-array name="nav_drawer_labels">
+        <item>Home</item>
+        <item>Test Alcohol levels</item>
+        <item>Share</item>
+        <item>Feedback</item>
+        <item>Settings</item>
+        <item>Rate This App</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Travel details strings -->
+    <string name="str_rb_driving">Driving</string>
+    <string name="str_rb_bicycling">Cycling</string>
+    <string name="str_rb_walking">Walking</string>
+
+    <!-- Submit order Strings-->
+    <string name="submit_order_title">Summary</string>
+    <string name="txtv_userName">Name: </string>
+    <string name="txtv_guests">Number of guests: </string>
+    <string name="txtv_arrivial_time">Arrival Time: </string>
+    <string name="txtv_bar_name">Bar Name: </string>
+    <string name="txtv_bar_address">Bar Address: </string>
+    <string name="txtv_order">Drinks Order: </string>
+
+    <!-- Test Effect of Alcohol Strings-->
+
+    <string name="txtv_acc_to_bar">Acceleration to bar</string>
+    <string name="txtv_acc_from_bar">Acceleration from bar </string>
+    <string name="txtv_time_to_bar">Time to bar</string>
+    <string name="txtv_time_from_bar">Time from bar</string>
+</resources>

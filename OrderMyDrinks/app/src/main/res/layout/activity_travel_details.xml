@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.jdarcy.ordermydrinks.TravelDetailsActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+        <RadioGroup
+            android:id="@+id/rg_modes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_driving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_rb_driving"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_bicycling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_rb_bicycling"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rb_walking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_rb_walking"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_distance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"/>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_alignParentRight="true"
+            app:layout_anchorGravity="top|right|end"
+            android:layout_gravity="top|right|end"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            app:layout_anchor="@id/rg_modes"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_beer" />
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            />
+        </RelativeLayout>
+        <fragment
+            android:id="@+id/nav_drwr_fragment"
+            android:name="com.example.jdarcy.ordermydrinks.NavigationDrawerFragment"
+            android:layout_width="@dimen/nav_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/floaty"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_anchor="@id/map"
+        app:layout_anchorGravity="bottom|right"/>
+</LinearLayout>

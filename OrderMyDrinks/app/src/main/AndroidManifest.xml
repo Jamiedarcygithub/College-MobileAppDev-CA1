@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jdarcy.ordermydrinks">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MaterailTheme">
+
+
+        <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+    -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCFfzSgvykv3fpIuDZcaxAg5e60DMUV8B4" />
+        <!-- Declare MainActivity  -->
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MaterailTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Declare SelectedPlaceActivity  -->
+        <activity
+            android:name=".SelectedPlaceActivity"
+            android:label="Select Place"
+            android:theme="@style/MaterailTheme">
+
+
+        </activity>
+        <!-- Declare Reservation Details activity  -->
+        <!-- Declare Select Drinks Details activity  -->
+        <activity
+            android:name=".SelectDrinksActivity"
+            android:label="Select Drinks"
+            android:theme="@style/MaterailTheme"/>
+
+        <!-- Declare Reservation Details activity  -->
+        <activity
+            android:name=".SubmitOrderActivity"
+            android:label="Submit Order"
+            android:theme="@style/MaterailTheme"/>
+
+        <!-- Declare Travel Details activity  -->
+        <activity
+            android:name=".TravelDetailsActivity"
+            android:label="Travel details"
+            android:theme="@style/MaterailTheme"/>
+        <!-- Declare Reservation Details activity  -->
+        <activity
+            android:name=".SelectPlaceActivity"
+            android:theme="@style/MaterailTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jdarcy.ordermydrinks.MainActivity" />
+        </activity>
+
+        <!-- Declare Effect of alcohol activity  -->
+        <activity
+            android:name=".EffectOfAlcoholActivity"
+            android:theme="@style/MaterailTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jdarcy.ordermydrinks.MainActivity" />
+        </activity>
+
+    </application>
+</manifest>
