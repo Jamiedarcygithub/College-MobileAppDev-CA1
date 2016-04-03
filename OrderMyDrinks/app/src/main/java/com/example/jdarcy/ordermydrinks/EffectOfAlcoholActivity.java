@@ -251,6 +251,7 @@ public class EffectOfAlcoholActivity extends AppCompatActivity implements Sensor
             mHandler.postDelayed(this, REFRESH_RATE);
         }
     };
+
     /**
      * Method to load menu on Activity create
      */

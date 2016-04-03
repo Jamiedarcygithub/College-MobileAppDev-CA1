@@ -157,8 +157,6 @@ public class SelectedPlaceActivity extends AppCompatActivity {
         i.putExtra("barLocationLng", Double.toString(placeDetails.result.geometry.location.lng));
         i.putExtra("barWebsite", placeDetails.result.website);
 
-        Toast.makeText(this, placeDetails.result.geometry.location.lat+" "+ placeDetails.result.geometry.location.lng, Toast.LENGTH_SHORT).show();
-
         startActivity(i);
         try {
             //Launch the Travel details Activity
@@ -333,7 +331,7 @@ public class SelectedPlaceActivity extends AppCompatActivity {
         }
 
         // Activate the navigation drawer toggle
-        return mDrawerToggle.onOptionsItemSelected(item)|| super.onOptionsItemSelected(item);
+        return mDrawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
 

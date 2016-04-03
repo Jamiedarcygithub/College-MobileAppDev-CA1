@@ -194,8 +194,6 @@ public class TravelDetailsActivity extends AppCompatActivity implements OnMapRea
         i.putExtra("barLocationLng", this.getIntent().getStringExtra("barLocationLng"));
         i.putExtra("barWebsite", this.getIntent().getStringExtra("barWebsite"));
         i.putExtra("travelTime", tvDistanceDuration.getText().toString());
-        Toast.makeText(this, this.getIntent().getStringExtra("travelTime") + " clicked !!!!!", Toast.LENGTH_SHORT).show();
-
 
         startActivity(i);
         try {

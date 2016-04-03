@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-        // Else Do sth...
     }
 
     private boolean validateName() {

@@ -183,8 +183,6 @@ public class SubmitOrderActivity extends AppCompatActivity {
                 break;
         }
 
-        Toast.makeText(this, msg + " clicked !!!!!", Toast.LENGTH_SHORT).show();
-
         return super.onOptionsItemSelected(item);
     }
     private void setUpDrawer() {

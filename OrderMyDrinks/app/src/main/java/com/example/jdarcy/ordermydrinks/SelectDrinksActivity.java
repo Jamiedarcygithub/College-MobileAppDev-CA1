@@ -159,9 +159,6 @@ public class SelectDrinksActivity extends AppCompatActivity {
             }
         }
 
-        Toast.makeText(SelectDrinksActivity.this, order, Toast.LENGTH_SHORT).show();
-
-
         //define a new Intent for the Reservation details
         Intent i = new Intent(getApplicationContext(), SubmitOrderActivity.class);
 
@@ -177,8 +174,6 @@ public class SelectDrinksActivity extends AppCompatActivity {
         i.putExtra("barLocationLng", this.getIntent().getStringExtra("barLocationLng"));
         i.putExtra("barWebsite", this.getIntent().getStringExtra("barWebsite"));
         i.putExtra("travelTime", this.getIntent().getStringExtra("travelTime"));
-
-        Toast.makeText(this, this.getIntent().getStringExtra("travelTime") + " clicked !!!!!", Toast.LENGTH_SHORT).show();
 
         startActivity(i);
         try {
